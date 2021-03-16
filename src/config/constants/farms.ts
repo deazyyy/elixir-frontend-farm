@@ -249,92 +249,92 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },  
-  // {
-  //   pid: 18,
-  //   risk: 1,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'DAI',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x3ab77e40340ab084c3e23be8e5a6f7afed9d41dc', // DAI-BUSD LP
-  //   },
-  //   tokenSymbol: 'DAI',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 19,
-  //   risk: 1,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'USDC',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x680dd100e4b394bda26a59dd5c119a391e747d18', // USDC-BUSD LP
-  //   },
-  //   tokenSymbol: 'USDC',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 20,
-  //   risk: 3,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'DOT',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x54c1ec2f543966953f2f7564692606ea7d5a184e', // DOT-BUSD LP
-  //   },
-  //   tokenSymbol: 'DOT',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x7083609fce4d1d8dc0c979aab8c869ea2c873402',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+  {
+    pid: 15,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'DAI',
+    lpAddresses: {
+      97: '',
+      56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', // DAI Address
+    },
+    tokenSymbol: 'DAI',
+    tokenAddresses: {
+      97: '',
+      56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 16,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'USDC',
+    lpAddresses: {
+      97: '',
+      56: '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d', // USDC Address
+    },
+    tokenSymbol: 'USDC',
+    tokenAddresses: {
+      97: '',
+      56: '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 17,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'DOT',
+    lpAddresses: {
+      97: '',
+      56: '0x7083609fce4d1d8dc0c979aab8c869ea2c873402', // DOT Address
+    },
+    tokenSymbol: 'DOT',
+    tokenAddresses: {
+      97: '',
+      56: '0x7083609fce4d1d8dc0c979aab8c869ea2c873402',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
 
-  // {
-  //   pid: 22,
-  //   risk: 3,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'BSCX',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xa32a983a64ce21834221aa0ad1f1533907553136', // BSCX-BUSD LP
-  //   },
-  //   tokenSymbol: 'BSCX',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x5ac52ee5b2a633895292ff6d8a89bb9190451587',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 23,
-  //   risk: 3,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'AUTO',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // AUTO-BNB LP
-  //   },
-  //   tokenSymbol: 'AUTO',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xa184088a740c695e156f91f5cc086a06bb78b827',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BNB,
-  //   quoteTokenAdresses: contracts.wbnb,
-  // },
+  {
+    pid: 18,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'BSCX',
+    lpAddresses: {
+      97: '',
+      56: '0x5ac52ee5b2a633895292ff6d8a89bb9190451587', // BSCX Address
+    },
+    tokenSymbol: 'BSCX',
+    tokenAddresses: {
+      97: '',
+      56: '0x5ac52ee5b2a633895292ff6d8a89bb9190451587',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 19,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'AUTO',
+    lpAddresses: {
+      97: '',
+      56: '0xa184088a740c695e156f91f5cc086a06bb78b827', // AUTO Address
+    },
+    tokenSymbol: 'AUTO',
+    tokenAddresses: {
+      97: '',
+      56: '0xa184088a740c695e156f91f5cc086a06bb78b827',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
 ]
 
 export default farms
