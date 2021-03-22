@@ -367,6 +367,38 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },    
+  {
+    pid: 22,
+    risk: 3,
+    lpSymbol: 'TRADE-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x2562f94E90dE6D9eb4fB6B3b8Eab56b15Aa4FC72', // TRADE-BNB LP Address
+    },
+    tokenSymbol: 'TRADE',
+    tokenAddresses: {
+      97: '',
+      56: '0x7af173F350D916358AF3e218Bdf2178494Beb748',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },   
+  {
+    pid: 23,
+    risk: 3,
+    lpSymbol: 'DGN-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x5f4F524e4462D9e0a96334adBa82AD4C85BE8a48', // DGN-BNB LP Address
+    },
+    tokenSymbol: 'DGN',
+    tokenAddresses: {
+      97: '',
+      56: '0x72f28c09be1342447fa01Ebc76eF508473d08c5c',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },    
 ]
 
 export default farms
