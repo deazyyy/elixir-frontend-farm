@@ -140,11 +140,15 @@ const GlobalStyle = createGlobalStyle`
     height:auto;
     font-size:14px;
     font-weight:500;
+    .btn_shiny{
+      z-index:-2
+    }
     a{
       z-index:100;
-      &:hover{
-        color:#fff
-      }
+      
+    }
+    &:hover{
+      color:#fff
     }
   }
   .wizard{
