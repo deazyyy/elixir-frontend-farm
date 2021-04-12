@@ -95,7 +95,8 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   )
 
   return (
-    <Page>
+    <Page >
+      <div className="farmbgouter"/>
       <div className="farmupper">
         <Heading as="h1" size="lg" color="#57565c" mb="50px" style={{ textAlign: 'center' }}>
           {

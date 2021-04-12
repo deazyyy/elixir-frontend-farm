@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { Heading, Text, BaseLayout, CardBody, Button } from '@pancakeswap-libs/uikit'
 import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
@@ -8,6 +9,7 @@ import LotteryCard from './components/LotteryCard'
 import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
+
 
 const Hero = styled.div`
   align-items: flex-start;
@@ -56,16 +58,22 @@ const Home: React.FC = () => {
 
   return (
     <Page className="homemain">
-      Hi, Alex
+      Hi,
       <h1 className="welcheading">Welcome back</h1>
       <Hero>
          <Heading as="h1" size="xl" mb="10px" color="#fff">
-            Wizard just arrived!
+            The Wizard arrived!
         </Heading>
         <Text color="#fff" style={{fontSize:"16px"}}>We have just launched our wizard event.</Text>
-          <Button className="wizardbutton" size="sm">
-            Join Event
+        <div className="wizardbuttonouter">
+          <Button className="wizardbutton" size="sm" mr="10px">
+            <Link to="/farms">Join our Pools</Link>
           </Button>
+          <Button className="wizardbutton" size="sm">
+            <Link to="/nests">Join our Farms</Link>
+          </Button>
+        </div>
+          
         <img src="images/wizard.png" className="wizard" alt="wizard" />
       </Hero>
       <div>

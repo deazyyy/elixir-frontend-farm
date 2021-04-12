@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     position:absolute;
     z-index:100;
     right:20px;
-    top:20px;
+    top:12px;
     button{
       height: 40px;
       border-radius: 12px;
@@ -102,6 +102,26 @@ const GlobalStyle = createGlobalStyle`
     margin: 30px auto 60px;
     display: block;
     max-width: 130px;
+    @media (max-width: 968px) {
+      display:none
+    }
+  }
+  .styledpanelcss{
+    @media (max-width: 968px) {
+      padding-top:90px
+    }
+  }
+
+  .farmbgouter{
+    background:url('images/farmbg.png');
+    background-size:100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
   }
   .farmupper{
     display:flex;
@@ -119,7 +139,13 @@ const GlobalStyle = createGlobalStyle`
     margin-top:10px;
     height:auto;
     font-size:14px;
-    font-weight:500
+    font-weight:500;
+    a{
+      z-index:100;
+      &:hover{
+        color:#fff
+      }
+    }
   }
   .wizard{
     position:absolute;
@@ -193,6 +219,22 @@ const GlobalStyle = createGlobalStyle`
   //   background:${({ theme }) => theme.colors.invertedContrast} !important;
   // }
   .harvestactionbtn button{font-size:12px}
+  .wizardbuttonouter{display:flex}
+  .menutopdesk{
+    background: transparent;
+    border: 0;
+        
+    @media (max-width: 768px) {
+      background-color: ${({ theme }) => theme.colors.card};
+      border-bottom: solid 2px rgba(133,133,133,0.1);
+    }
+  } 
+  .menutopdesk div:first-child {
+    opacity:0;
+    @media (max-width: 968px) {
+      opacity:1;
+    }
+  }
 `
 
 export default GlobalStyle
