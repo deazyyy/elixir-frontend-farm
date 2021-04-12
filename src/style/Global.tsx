@@ -218,6 +218,12 @@ const GlobalStyle = createGlobalStyle`
       background:#fff;
       color:#57565c !important;
       text-align:center;
+      .btn_shiny{display:none}
+      a{
+        color:#57565c;
+        text-decoration:none !important;
+        font-size:13px;
+      }
   }
   // .panelFooter button:hover{
   //   background:${({ theme }) => theme.colors.invertedContrast} !important;
