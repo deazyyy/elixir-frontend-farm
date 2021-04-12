@@ -32,6 +32,7 @@ const CardImage = styled.img`
 `
 
 const Label = styled.div`
+<<<<<<< HEAD
   color:#8e8d95;
   font-size: 13px;
 `
@@ -39,6 +40,10 @@ const LabelHead = styled.div`
   color: #57565c;
   font-size: 14px;
   font-weight: 500;
+=======
+  color: ${({ theme }) => theme.colors.textSubtle};
+  font-size: 14px;
+>>>>>>> 87fde04d9d768bc746ec8dcc4bab1b791a9bfe0d
 `
 
 const Actions = styled.div`

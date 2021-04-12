@@ -4,7 +4,10 @@
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
 /goose-uikit
+=======
+>>>>>>> 87fde04d9d768bc746ec8dcc4bab1b791a9bfe0d
 /.pnp
 .pnp.js
 
