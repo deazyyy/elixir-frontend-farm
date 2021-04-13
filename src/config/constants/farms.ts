@@ -300,24 +300,6 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-
-  {
-    pid: 18,
-    risk: 3,
-    isTokenOnly: true,
-    lpSymbol: 'BSCX',
-    lpAddresses: {
-      97: '',
-      56: '0x5ac52ee5b2a633895292ff6d8a89bb9190451587', // BSCX Address
-    },
-    tokenSymbol: 'BSCX',
-    tokenAddresses: {
-      97: '',
-      56: '0x5ac52ee5b2a633895292ff6d8a89bb9190451587',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
   {
     pid: 19,
     risk: 3,
@@ -399,6 +381,91 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },    
+  {
+    pid: 24,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'DGN',
+    lpAddresses: {
+      97: '',
+      56: '0x72f28c09be1342447fa01Ebc76eF508473d08c5c', // DGN Address
+    },
+    tokenSymbol: 'DGN',
+    tokenAddresses: {
+      97: '',
+      56: '0x72f28c09be1342447fa01Ebc76eF508473d08c5c',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.wbnb,
+  },   
+  {
+    pid: 25,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'TRADE',
+    lpAddresses: {
+      97: '',
+      56: '0x7af173F350D916358AF3e218Bdf2178494Beb748', // TRADE Address
+    },
+    tokenSymbol: 'TRADE',
+    tokenAddresses: {
+      97: '',
+      56: '0x7af173F350D916358AF3e218Bdf2178494Beb748',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.wbnb,
+  },   
+  {
+    pid: 26,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'SPACE',
+    lpAddresses: {
+      97: '',
+      56: '0x0abd3E3502c15ec252f90F64341cbA74a24fba06', // SPACE Address
+    },
+    tokenSymbol: 'SPACE',
+    tokenAddresses: {
+      97: '',
+      56: '0x0abd3E3502c15ec252f90F64341cbA74a24fba06',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.wbnb,
+  },    
+  {
+    pid: 27,
+    risk: 3,
+    lpSymbol: 'SPACE-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x78D9a0c50F6484291b4122f61888Bb9EE71879Ff', // SPACE-BNB LP Address
+    },
+    tokenSymbol: 'SPACE',
+    tokenAddresses: {
+      97: '',
+      56: '0x0abd3E3502c15ec252f90F64341cbA74a24fba06',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },     
+
+  {
+    pid: 28,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'BIFI',
+    lpAddresses: {
+      97: '',
+      56: '0xCa3F508B8e4Dd382eE878A314789373D80A5190A', // BIFI Address
+    },
+    tokenSymbol: 'BIFI',
+    tokenAddresses: {
+      97: '',
+      56: '0xCa3F508B8e4Dd382eE878A314789373D80A5190A',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },  
 ]
 
 export default farms
