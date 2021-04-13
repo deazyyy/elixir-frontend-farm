@@ -24,7 +24,6 @@ const GlobalStyle = createGlobalStyle`
     background-color:#b1876d !important;
   }
   .connectbtn{
-    position:absolute;
     z-index:100;
     right:20px;
     top:12px;
@@ -240,9 +239,19 @@ const GlobalStyle = createGlobalStyle`
     }
   } 
   .menutopdesk div:first-child {
-    opacity:0;
+    opacity:1;
+    svg{opacity:0;}
     @media (max-width: 968px) {
+      svg{opacity:1;}
       opacity:1;
+    }
+  }
+  .menutopdesk div:nth-child(2) {
+    height:42px;
+    img{display:none;}
+    button{
+      height: 40px;
+      border-radius: 12px;
     }
   }
 `

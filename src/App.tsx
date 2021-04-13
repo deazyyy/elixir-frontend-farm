@@ -39,7 +39,7 @@ const App: React.FC = () => {
     <Router>
       <ResetCSS />
       <GlobalStyle />
-      <div className="connectbtn"><Button>Connect</Button></div>
+      {/* <div className="connectbtn"><Button>Connect</Button></div> */}
       <Menu>
         <Suspense fallback={<PageLoader />}>
           <Switch>
