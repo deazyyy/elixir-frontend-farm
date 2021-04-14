@@ -227,6 +227,7 @@ const GlobalStyle = createGlobalStyle`
   // .panelFooter button:hover{
   //   background:${({ theme }) => theme.colors.invertedContrast} !important;
   // }
+  .harvestactionbtn{flex-direction:row}
   .harvestactionbtn button{font-size:12px}
   .wizardbuttonouter{display:flex}
   .menutopdesk{
@@ -252,6 +253,27 @@ const GlobalStyle = createGlobalStyle`
     button{
       height: 40px;
       border-radius: 12px;
+    }
+  }
+  .brown_bx{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    padding: 60px 30px;
+    border:2px dashed #cdcdcd;
+    border-radius:12px;
+    font-size:600;
+    img{
+      display:block;
+      width: 50%;
+      max-width: 100px;
+      margin-bottom:20px
+    }
+    button{
+      margin-top:20px;
+      background-color:#DE9F80;
+      width:100%
     }
   }
 `

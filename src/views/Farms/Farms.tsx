@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { provider } from 'web3-core'
-import { Image, Heading } from '@pancakeswap-libs/uikit'
+import { Image, Heading,Button } from '@pancakeswap-libs/uikit'
 import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
@@ -88,10 +88,11 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           cakePrice={cakePrice}
           ethereum={ethereum}
           account={account}
+          tokenMode={tokenMode}
         />
       ))
     },
-    [bnbPrice, account, cakePrice, ethereum],
+    [bnbPrice, account, cakePrice, ethereum,tokenMode],
   )
 
   return (
@@ -115,9 +116,21 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           <FlexLayout>
             <Route exact path={`${path}`}>
               {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
+              {
+                tokenMode ?<div className="brown_bx">
+                <img src="images/brown_munda.png" alt="img"/>
+                Want to see your project here?
+                <Button >Apply Now</Button>
+
+              </div>: " "
+                  
+                
+              }
+
             </Route>
             <Route exact path={`${path}/history`}>
               {farmsList(inactiveFarms, true)}
+              
             </Route>
           </FlexLayout>
         </div>
